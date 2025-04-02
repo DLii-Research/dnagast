@@ -1,6 +1,6 @@
 import tensorflow as tf
 import tensorflow.keras as keras
-import tensorflow_probability as tfp
+# import tensorflow_probability as tfp
 import settransformer as st
 
 from common.models.gan import IConditionalGanComponent, IGanGenerator
@@ -847,10 +847,10 @@ class VeeGastReconstructor(CustomModel, IConditionalGanComponent):
             y = keras.layers.Add()((y, label_embedding))
 
         y = st.spectral_dense(self.noise_dim, use_spectral_norm=self.use_spectral_norm, name="Last_projection")(y)
-        y = tfp.layers.DistributionLambda(
-            lambda x: tfp.distributions.Normal(loc=x, scale=1),
-            lambda x: x.sample(),
-            name="p_x")(y)
+        # y = tfp.layers.DistributionLambda(
+        #     lambda x: tfp.distributions.Normal(loc=x, scale=1),
+        #     lambda x: x.sample(),
+        #     name="p_x")(y)
 
         if self.num_classes > 1:
             return keras.Model((data, label), y)

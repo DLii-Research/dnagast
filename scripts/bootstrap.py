@@ -6,7 +6,7 @@ import os
 import numpy as np
 import tensorflow as tf
 import tensorflow.keras as keras
-import tf_utils as tfu
+import tf_utilities as tfu
 import sys
 
 # Allow importing from the current working directory
@@ -109,7 +109,7 @@ def __init_wandb(job_config, config):
     __session["is_resumed"] = bool(job_config.resume)
     if not hasattr(job_config, "wandb_project"):
         return None
-    if utils.str_to_bool(os.environ["WANDB_DISABLED"]):
+    if utils.str_to_bool(os.environ.get("WANDB_DISABLED", "False")):
         print("WARNING: Weights and Biases is currently disabled in the environment.")
         return None
 

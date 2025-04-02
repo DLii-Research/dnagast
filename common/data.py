@@ -370,7 +370,6 @@ class DnaSampleGenerator(DnaSequenceGenerator):
             rng=rng,
             **kwargs)
 
-
     def shuffle(self):
         self.sample_indices = self.rng.integers(
             self.num_samples,

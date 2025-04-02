@@ -62,8 +62,9 @@ def define_arguments(cli):
 
 def fetch_dna_samples(config):
     datadir = bootstrap.artifact(config, "dataset")
-    path = os.path.join(datadir, "train")
-    samples = find_dbs(path)
+    #path = os.path.join(datadir, "train")
+    sequences = fasta.FastaDb(os.path.join(datadir, "sequences.fasta.db"))
+    samples = sequences.mappings(os.path.join(datadir, "sequences.fasta.mapping.db"))
     bootstrap.rng().shuffle(samples)
     return samples[:5]
 
