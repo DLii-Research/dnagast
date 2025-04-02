@@ -1,6 +1,6 @@
 # [DNAGAST]()
 
-The official code repository for the [DNAGAST: Generative Adversarial Set Transformers for High-throughput Sequencing]().
+The official code repository for [DNAGAST: Generative Adversarial Set Transformers for High-throughput Sequencing]().
 
 ## Dependencies
 
