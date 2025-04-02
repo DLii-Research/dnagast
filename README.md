@@ -12,4 +12,4 @@ The official code repository for the DNAGAST model.
 
 ## Training & Evaluation
 
-Each model architecture can me trained/evaluated by invoking the appropriate script located in the `scripts/` directory. These scripts integrate the Weights & Biases platform directly for easy version control, thus W&B must be configured appropriately on your system before execution.
+Each model architecture can be trained and evaluated by invoking the appropriate script located in the `scripts/` directory. These scripts integrate the Weights & Biases platform directly for version control, thus W&B must be configured appropriately on your system before execution.
