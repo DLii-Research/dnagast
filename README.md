@@ -16,6 +16,7 @@ Each model architecture can be trained and evaluated by invoking the appropriate
 
 ## Citation
 
+```
 @article{ludwig_phillips_2025,
     title={DNAGAST: Generative Adversarial Set Transformers for High-throughput Sequencing},
     journal={In Press},
@@ -23,3 +24,4 @@ Each model architecture can be trained and evaluated by invoking the appropriate
     year={2025},
     month={May}
 }
+```
