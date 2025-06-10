@@ -17,10 +17,12 @@ Each model architecture can be trained and evaluated by invoking the appropriate
 ## Citation
 
 ```
-@article{ludwig_phillips_2025,
+@article{ludwig_dnagast_2025,
     title={DNAGAST: Generative Adversarial Set Transformers for High-throughput Sequencing},
-    journal={In Press},
     author={Ludwig II, David W. and Phillips, Joshua L.},
+    journal={The International FLAIRS Conference Proceedings},
+    volume={38},
+    issn = {2334-0762},
     year={2025},
     month={May}
 }
